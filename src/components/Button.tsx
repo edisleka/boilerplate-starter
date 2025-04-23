@@ -1,9 +1,9 @@
-import { Pressable, PressableProps, Text } from 'react-native'
+import { Pressable, Text } from 'react-native'
 import { cn } from '../utils/cn'
 import React from 'react'
-import { ButtonProps } from '@/types/button/buttonProps'
-import { buttonTheme } from '@/constants/buttonTheme'
-import { textButtonTheme } from '@/constants/textButtonTheme'
+import { ButtonProps } from '@/types'
+import { buttonTheme, textButtonTheme } from '@/constants'
+
 export const Button = React.forwardRef<
   React.ComponentRef<typeof Pressable>,
   ButtonProps

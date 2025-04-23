@@ -1,9 +1,7 @@
 import { Text as RNText } from 'react-native'
 import { cn } from '@/utils/cn'
-import { TextProps } from '@/types/text/textProps'
-import { textSize } from '@/constants/textSize'
-import { colors } from '@/constants/colors'
-import { textFont } from '@/constants/textFont'
+import { TextProps } from '@/types'
+import { textSize, colors, textFont } from '@/constants'
 
 export const Text = ({
   children,
