@@ -2,7 +2,7 @@ import { Text as RNText } from 'react-native'
 import { cn } from '@/utils/cn'
 import { TextProps } from '@/types/text/textProps'
 import { textSize } from '@/constants/textSize'
-import { textColor } from '@/constants/textColor'
+import { colors } from '@/constants/colors'
 import { textFont } from '@/constants/textFont'
 
 export const Text = ({
@@ -19,7 +19,7 @@ export const Text = ({
         textSize[size],
         textFont[font],
         bold && 'font-rubik-bold',
-        textColor[color],
+        colors[color],
         className
       )}
     >

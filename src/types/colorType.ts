@@ -1,4 +1,4 @@
-export type TextColor =
+export type ColorType =
   | 'primary'
   | 'secondary'
   | 'tertiary'

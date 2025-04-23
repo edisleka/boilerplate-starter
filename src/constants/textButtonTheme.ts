@@ -1,7 +1,7 @@
-import { TextColor } from '@/types/text/textColorTypes'
+import { ButtonThemeTypes } from '@/types/button/buttonThemeType'
 
-export const textColor: Record<TextColor, string> = {
-  primary: 'text-primary',
+export const textButtonTheme: Record<ButtonThemeTypes, string> = {
+  primary: 'text-white',
   secondary: 'text-secondary',
   tertiary: 'text-tertiary',
   accent: 'text-accent',
