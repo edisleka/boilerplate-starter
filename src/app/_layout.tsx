@@ -1,5 +1,7 @@
 import { Stack } from 'expo-router'
 import '../../global.css'
+import { StatusBar } from 'expo-status-bar'
+
 import * as SplashScreen from 'expo-splash-screen'
 import { useFontLoader } from '@/hooks/useFontLoader'
 import { useEffect } from 'react'
@@ -21,10 +23,13 @@ const InitialLayout = () => {
   }
 
   return (
-    <Stack>
-      <Stack.Screen name='(app)' options={{ headerShown: false }} />
-      <Stack.Screen name='(auth)' options={{ headerShown: false }} />
-    </Stack>
+    <>
+      <StatusBar style='auto' />
+      <Stack>
+        <Stack.Screen name='(app)' options={{ headerShown: false }} />
+        <Stack.Screen name='(auth)' options={{ headerShown: false }} />
+      </Stack>
+    </>
   )
 }
 
